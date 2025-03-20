@@ -22,6 +22,18 @@ let mailOptions = {
     html: "<h1>Hello</h1>",
 };
 
+app.get("/test", (req, res) => {
+    res.json({
+        msg: "selam"
+    })
+});
+
+app.get("/version", (req, res) => {
+    res.json({
+        version: "1.0.0"
+    })
+});
+
 /* transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
         console.log(error);
@@ -31,7 +43,7 @@ let mailOptions = {
 });
  */
 
-app.listen(3000, () => {
+app.listen(7000, () => {
     console.log("Server is running on port 3000");
 });
 
