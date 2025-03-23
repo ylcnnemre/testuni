@@ -11,26 +11,27 @@ const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
         user: "jsftrx@gmail.com",
-        pass: "xnxsrxqcpdgdxewt",
+        pass: "",
     },
 });
 
 let mailOptions = {
     from: "jsftrx@gmail.com",
-    to: "yalcnnemre@gmail.com",
+    to: "",
     subject: "Test Email",
     html: `
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+<!-- DONE -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unisyn Email Template</title>
+    <title>Create Account - Unisyn</title>
 </head>
 
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6;">
-    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #EDEDF4; padding: 20px 0; ">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #EDEDF4;padding: 20px 0;">
         <tr>
             <td align="center">
                 <table cellpadding="0" cellspacing="0" border="0" width="650" style="background-color: white;">
@@ -58,10 +59,11 @@ let mailOptions = {
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                     <td width="60%">
-                                        <h1 style="margin: 0; font-size: 35px; color: white;">Action Required</h1>
+                                        <h1 style="margin: 0; font-size: 35px; color: white; line-height: 1.2;">Create
+                                            An Account<br>With Us!</h1>
                                     </td>
                                     <td width="40%" align="right">
-                                        <img src="https://test.kodafor.com/cyber1.png" alt="Security Icon"
+                                        <img src="https://test.kodafor.com/signin.png" alt="Account Icon"
                                             style="width: 150px; height: 150px;">
                                     </td>
                                 </tr>
@@ -71,11 +73,32 @@ let mailOptions = {
 
                     <!-- Main Content -->
                     <tr>
-                        <td style="padding: 30px;">
-                            <h2 style="color: #333; margin-top: 0; font-size: 18px;">Lorem Ipsum Dolor Sit Amet</h2>
-                            <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
-                                sapien tristique eros porta sodales.</p>
-                            <p style="color: black;">If you have any questions, please reply to this email.</p>
+                        <td style="padding: 30px;padding-bottom: 20px;">
+                            <p
+                                style="color: black; margin-top: 0; margin-bottom: 10px; font-size: 18px;line-height: 24px;">
+                                You are invited to our platform! Please click on the button below to create an account
+                                and get started today.</p>
+
+                            <!-- Create Account Button -->
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" style="padding: 20px 0;">
+                                        <table cellpadding="0" cellspacing="0" border="0"
+                                            style="background-color: #F0F3FF; width: 100%; border-radius: 8px;">
+                                            <tr>
+                                                <td align="center" style="padding: 15px;">
+                                                    <a href="#"
+                                                        style="font-size: 30px; color: #0066CC; text-decoration: none; font-weight: 800;">Create
+                                                        Account</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="color: black;margin-top: 0;">If you have any questions, please reply to this
+                                email.</p>
                             <p style="margin-top: 20px; font-weight: bold;">
                                 Cheers,<br>
                                 The Unisyn Team
@@ -83,92 +106,121 @@ let mailOptions = {
                         </td>
                     </tr>
 
-                    <!-- Quick Links Section -->
+                    <!-- Features Section -->
                     <tr>
-                        <td style="">
-                            <div style="border-top: 1px solid #D3D4DB;">
-                                <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#EEF1FF"
-                                    style="margin: 20px 0px 0px 0px; ">
-                                    <tr style="text-align: left;">
-                                        <td style="padding: 30px; padding-left: 50px; padding-bottom: 25px;">
-                                            <h3 style="margin-top: 0; color: #333;">Quick Links For You</h3>
-                                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                <tr>
-                                                    <td width="50%" valign="top">
-                                                        <a href="#"
-                                                            style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/calendar-plus.png" alt=""
-                                                                style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
-                                                            <span
-                                                                style="display: inline-block; vertical-align: middle;">Go
-                                                                to Calendar booking</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/paperclip.png" alt=""
-                                                                style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
-                                                            <span
-                                                                style="display: inline-block; vertical-align: middle;">Go
-                                                                to Secure File Uploads</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/briefcase.png" alt=""
-                                                                style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
-                                                            <span
-                                                                style="display: inline-block; vertical-align: middle;">Go
-                                                                to Demo Scheduling</span>
-                                                        </a>
 
-                                                    <td width="50%" valign="top">
-                                                        <a href="#"
-                                                            style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/list.png" alt=""
-                                                                style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
-                                                            <span
-                                                                style="display: inline-block; vertical-align: middle;">Go
-                                                                to Application Forms</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/cloud.png" alt=""
-                                                                style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
-                                                            <span
-                                                                style="display: inline-block; vertical-align: middle;">Go
-                                                                to Secure File Uploads</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/compass.png" alt=""
-                                                                style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
-                                                            <span
-                                                                style="display: inline-block; vertical-align: middle;">Go
-                                                                to Onboarding AI</span>
-                                                        </a>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
+                        <td style="padding-top: 20px; border-top: 1px solid #D3D4DB;">
+                            <table style=" background-color: #E6EBFF; padding: 30px 20px;" width="100%" cellpadding="0"
+                                cellspacing="0" border="0">
+                                <tr>
+                                    <td width="200" valign="middle"
+                                        style="padding-right: 15px; padding-left: 10px; vertical-align: middle;">
+                                        <p style="margin: 0; font-weight: 500; font-size: 18px; line-height: 1.3;">
+                                            Find
+                                            More About Our<br>Features
+                                            <span style="font-weight: bold;">
+                                                & More
+                                            </span>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="50%" style="padding: 0 0 15px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td width="40" valign="middle"
+                                                                style="padding-right: 10px; vertical-align: middle;">
+                                                                <img src="https://test.kodafor.com/frame_4.png"
+                                                                    alt="Core Platform"
+                                                                    style="width: 40px; height: 40px; padding: 8px; background-color: white;border-radius: 50%; display: block;">
+                                                            </td>
+                                                            <td valign="middle" style="vertical-align: middle;">
+                                                                <p
+                                                                    style="margin: 0; font-weight: 500; font-size: 14px; line-height: 1.3;">
+                                                                    Core Platform<br>Capabilities</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="50%" style="padding: 0 0 15px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td width="40" valign="middle"
+                                                                style="padding-right: 10px; vertical-align: middle;">
+                                                                <img src="https://test.kodafor.com/frame_2x.png"
+                                                                    alt="SafeForms"
+                                                                    style="width: 40px; height: 40px; padding: 8px; background-color: white;border-radius: 50%; display: block;">
+                                                            </td>
+                                                            <td valign="middle" style="vertical-align: middle;">
+                                                                <p
+                                                                    style="margin: 0; font-weight: 500; font-size: 14px; line-height: 1.3;">
+                                                                    SafeForms™<br>Builder</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="50%" style="padding: 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td width="40" valign="middle"
+                                                                style="padding-right: 10px; vertical-align: middle;">
+                                                                <img src="https://test.kodafor.com/framex.png"
+                                                                    alt="RiskVision AI"
+                                                                    style="width: 40px; height: 40px; padding: 8px; background-color: white; border-radius: 50%; display: block;">
+                                                            </td>
+                                                            <td valign="middle" style="vertical-align: middle;">
+                                                                <p
+                                                                    style="margin: 0; font-weight: 500; font-size: 14px; line-height: 1.3;">
+                                                                    RiskVision AI™</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="50%" style="padding: 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td width="40" valign="middle"
+                                                                style="padding-right: 10px; vertical-align: middle;">
+                                                                <img src="https://test.kodafor.com/frame_4.png"
+                                                                    alt="DocEasy"
+                                                                    style="width: 40px; height: 40px; padding: 8px; background-color: white; border-radius: 50%; display: block;">
+                                                            </td>
+                                                            <td valign="middle" style="vertical-align: middle;">
+                                                                <p
+                                                                    style="margin: 0; font-weight: 500; font-size: 14px; line-height: 1.3;">
+                                                                    DocEasy™ AI<br>Parser</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
+
+
                     </tr>
 
                     <!-- Footer -->
                     <tr>
-                        <td style="padding: 0 30px ;border-bottom: 1px solid #D3D4DB; ">
+                        <td style="padding: 0 30px; border-bottom: 1px solid #D3D4DB;">
                             <div style="padding-top: 20px;">
                                 <p style="color: black; font-size: 13px;">This email was intended for [ User Name ] at [
                                     User Email address ]. If you need assistance or have questions, please contact <a
                                         href="mailto:customerservice@unisyn.com"
                                         style="color: #0066CC; text-decoration: none;">customerservice@unisyn.com</a>
                                 </p>
+
                                 <p style="color: black; font-size: 13px;">You can visit our <a href="#"
                                         style="color: #0066CC; text-decoration: none;">Help Center</a> page for your
                                     questions or contact us through the <a href="#"
                                         style="color: #0066CC; text-decoration: none;">Contact Form</a>.</p>
+
                                 <p style="color: black; font-size: 13px;">Address: 7251 w Lake Mead Blvd Suite 300 Las
                                     Vegas, NV 89128 Phone: <a href="tel:+17025949579"
                                         style="color: #0066CC; text-decoration: none;">+1-702-594-9579</a></p>
@@ -221,13 +273,7 @@ let mailOptions = {
 
 app.get("/test", (req, res) => {
     res.json({
-        msg: "selam"
-    })
-});
-
-app.get("/version", (req, res) => {
-    res.json({
-        version: "1.0.0"
+        msg: "test endpoint"
     })
 });
 
