@@ -30,19 +30,20 @@ let mailOptions = {
 </head>
 
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6;">
-    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #EDEDF4">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #EDEDF4; padding: 20px 0; ">
         <tr>
             <td align="center">
                 <table cellpadding="0" cellspacing="0" border="0" width="650" style="background-color: white;">
                     <!-- Header -->
                     <tr>
-                        <td style="padding: 15px;">
+                        <td style="padding: 12px 30px;">
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                    <td>
-                                        <img src="https://test.kodafor.com/logo.png" alt="Unisyn" style="height: 30px;">
+                                    <td valign="middle" style="vertical-align: middle; height: 40px;">
+                                        <img src="https://test.kodafor.com/logo.png" alt="Unisyn"
+                                            style="height: 30px; display: block;">
                                     </td>
-                                    <td align="right">
+                                    <td align="right" valign="middle" style="vertical-align: middle; height: 40px;">
                                         <a href="https://www.unisyn.app"
                                             style="color: #0066CC; text-decoration: none;">www.unisyn.app</a>
                                     </td>
@@ -53,7 +54,7 @@ let mailOptions = {
 
                     <!-- Blue Banner -->
                     <tr>
-                        <td style="background-color: #0066CC; padding: 40px 30px;">
+                        <td style="background-color: #0066CC; padding: 30px 30px;">
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                     <td width="60%">
@@ -61,7 +62,7 @@ let mailOptions = {
                                     </td>
                                     <td width="40%" align="right">
                                         <img src="https://test.kodafor.com/cyber1.png" alt="Security Icon"
-                                            style="width: 130px; height: 130px;">
+                                            style="width: 150px; height: 150px;">
                                     </td>
                                 </tr>
                             </table>
@@ -71,7 +72,7 @@ let mailOptions = {
                     <!-- Main Content -->
                     <tr>
                         <td style="padding: 30px;">
-                            <h2 style="color: #333; margin-top: 0;">Lorem Ipsum Dolor Sit Amet</h2>
+                            <h2 style="color: #333; margin-top: 0; font-size: 18px;">Lorem Ipsum Dolor Sit Amet</h2>
                             <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
                                 sapien tristique eros porta sodales.</p>
                             <p style="color: black;">If you have any questions, please reply to this email.</p>
@@ -89,7 +90,7 @@ let mailOptions = {
                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#EEF1FF"
                                     style="margin: 20px 0px 0px 0px; ">
                                     <tr style="text-align: left;">
-                                        <td style="padding: 30px; padding-left: 50px;">
+                                        <td style="padding: 30px; padding-left: 50px; padding-bottom: 25px;">
                                             <h3 style="margin-top: 0; color: #333;">Quick Links For You</h3>
                                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                                 <tr>
