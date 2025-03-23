@@ -1,26 +1,4 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
-const app = express();
-
-/* xnxs rxqc pdgd xewt */
-
-app.use(express.json());
-app.use(express.static("public"));
-
-const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: "jsftrx@gmail.com",
-        pass: "xnxsrxqcpdgdxewt",
-    },
-});
-
-let mailOptions = {
-    from: "jsftrx@gmail.com",
-    to: "yalcnnemre@gmail.com",
-    subject: "Test Email",
-    html: `
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -36,13 +14,14 @@ let mailOptions = {
                 <table cellpadding="0" cellspacing="0" border="0" width="650" style="background-color: white;">
                     <!-- Header -->
                     <tr>
-                        <td style="padding: 15px;">
+                        <td style="padding: 12px 30px;">
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                    <td>
-                                        <img src="https://test.kodafor.com/logo.png" alt="Unisyn" style="height: 30px;">
+                                    <td valign="middle" style="vertical-align: middle; height: 40px;">
+                                        <img src="../public/logo.png" alt="Unisyn"
+                                            style="height: 30px; display: block;">
                                     </td>
-                                    <td align="right">
+                                    <td align="right" valign="middle" style="vertical-align: middle; height: 40px;">
                                         <a href="https://www.unisyn.app"
                                             style="color: #0066CC; text-decoration: none;">www.unisyn.app</a>
                                     </td>
@@ -52,28 +31,43 @@ let mailOptions = {
                     </tr>
 
                     <!-- Blue Banner -->
-                    <tr>
-                        <td style="background-color: #0066CC; padding: 40px 30px;">
-                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                    <td width="60%">
-                                        <h1 style="margin: 0; font-size: 35px; color: white;">Action Required</h1>
-                                    </td>
-                                    <td width="40%" align="right">
-                                        <img src="https://test.kodafor.com/cyber1.png" alt="Security Icon"
-                                            style="width: 130px; height: 130px;">
-                                    </td>
-                                </tr>
-                            </table>
+                    <tr style="padding-top: 20px; padding-bottom: 20px;">
+                        <td style="">
+                            <img src="../public/cta_banner.png" alt="Create Account Banner"
+                                style="width: 100%; display: block;">
                         </td>
                     </tr>
+
+
+
 
                     <!-- Main Content -->
                     <tr>
                         <td style="padding: 30px;">
-                            <h2 style="color: #333; margin-top: 0;">Lorem Ipsum Dolor Sit Amet</h2>
-                            <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
-                                sapien tristique eros porta sodales.</p>
+                            <h2 style="color: #333; margin-top: 0; font-size: 18px;">
+                                Lorem Ipsum Dolor Sit Amet!
+                            </h2>
+                            <p style="color: black; font-size: 18px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
+                                sapien tristique eros porta sodales.
+                            </p>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" style="padding: 5px 0;">
+                                        <table cellpadding="0" cellspacing="0" border="0"
+                                            style="background-color: #F0F3FF; width: 100%; border-radius: 8px;">
+                                            <tr>
+                                                <td align="center" style="padding: 13px;">
+                                                    <a href="#"
+                                                        style="font-size: 24px; color:#0C6CE0; text-decoration: none; font-weight: 700;letter-spacing: 1px;">
+                                                        CTA
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                             <p style="color: black;">If you have any questions, please reply to this email.</p>
                             <p style="margin-top: 20px; font-weight: bold;">
                                 Cheers,<br>
@@ -82,6 +76,7 @@ let mailOptions = {
                         </td>
                     </tr>
 
+
                     <!-- Quick Links Section -->
                     <tr>
                         <td style="">
@@ -89,14 +84,14 @@ let mailOptions = {
                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#EEF1FF"
                                     style="margin: 20px 0px 0px 0px; ">
                                     <tr style="text-align: left;">
-                                        <td style="padding: 30px; padding-left: 50px;">
+                                        <td style="padding: 30px; padding-left: 50px; padding-bottom: 25px;">
                                             <h3 style="margin-top: 0; color: #333;">Quick Links For You</h3>
                                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                                 <tr>
                                                     <td width="50%" valign="top">
                                                         <a href="#"
                                                             style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/calendar-plus.png" alt=""
+                                                            <img src="../public/calendar-plus.png" alt=""
                                                                 style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
                                                             <span
                                                                 style="display: inline-block; vertical-align: middle;">Go
@@ -104,7 +99,7 @@ let mailOptions = {
                                                         </a>
                                                         <a href="#"
                                                             style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/paperclip.png" alt=""
+                                                            <img src="../public/paperclip.png" alt=""
                                                                 style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
                                                             <span
                                                                 style="display: inline-block; vertical-align: middle;">Go
@@ -112,7 +107,7 @@ let mailOptions = {
                                                         </a>
                                                         <a href="#"
                                                             style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/briefcase.png" alt=""
+                                                            <img src="../public/briefcase.png" alt=""
                                                                 style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
                                                             <span
                                                                 style="display: inline-block; vertical-align: middle;">Go
@@ -122,7 +117,7 @@ let mailOptions = {
                                                     <td width="50%" valign="top">
                                                         <a href="#"
                                                             style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/list.png" alt=""
+                                                            <img src="../public/list.png" alt=""
                                                                 style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
                                                             <span
                                                                 style="display: inline-block; vertical-align: middle;">Go
@@ -130,7 +125,7 @@ let mailOptions = {
                                                         </a>
                                                         <a href="#"
                                                             style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/cloud.png" alt=""
+                                                            <img src="../public/cloud.png" alt=""
                                                                 style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
                                                             <span
                                                                 style="display: inline-block; vertical-align: middle;">Go
@@ -138,7 +133,7 @@ let mailOptions = {
                                                         </a>
                                                         <a href="#"
                                                             style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
-                                                            <img src="https://test.kodafor.com/compass.png" alt=""
+                                                            <img src="../public/compass.png" alt=""
                                                                 style="height: 20px; vertical-align: middle; margin-right: 3px; display: inline-block;">
                                                             <span
                                                                 style="display: inline-block; vertical-align: middle;">Go
@@ -190,15 +185,15 @@ let mailOptions = {
                                             style="margin-top: 20px;">
                                             <tr>
                                                 <td>
-                                                    <img src="https://test.kodafor.com/filelock.png" alt="FileLocker"
+                                                    <img src="../public/filelock.png" alt="FileLocker"
                                                         style="height: 20px;">
                                                 </td>
                                                 <td align="right">
                                                     <a href="#" style="margin-left: 10px;"><img
-                                                            src="https://test.kodafor.com/linkedin.png" alt="LinkedIn"
+                                                            src="../public/linkedin.png" alt="LinkedIn"
                                                             style="height: 25px;"></a>
                                                     <a href="#" style="margin-left: 10px;"><img
-                                                            src="https://test.kodafor.com/insta.png" alt="Instagram"
+                                                            src="../public/insta.png" alt="Instagram"
                                                             style="height: 25px;"></a>
                                                 </td>
                                             </tr>
@@ -215,31 +210,3 @@ let mailOptions = {
 </body>
 
 </html>
-    `,
-};
-
-app.get("/test", (req, res) => {
-    res.json({
-        msg: "selam"
-    })
-});
-
-app.get("/version", (req, res) => {
-    res.json({
-        version: "1.0.0"
-    })
-});
-
-transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log("Email sent: " + info.response);
-    }
-});
-
-
-app.listen(4545, () => {
-    console.log("Server is running on port 3000");
-});
-
