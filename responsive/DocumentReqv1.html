@@ -1,27 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- DONE-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unisyn Email Template</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+        }
+        
+        /* Responsive styles */
+        @media only screen and (max-width: 650px) {
+            .main-table {
+                width: 100% !important;
+            }
+            
+            .content-cell {
+                padding: 20px 15px !important;
+            }
+            
+            .banner-cell {
+                padding: 20px 15px !important;
+            }
+            
+            .banner-image {
+                width: 100px !important;
+                height: 100px !important;
+            }
+            
+            .quick-links-table td {
+                display: block !important;
+                width: 100% !important;
+            }
+            
+            .mobile-stack {
+                display: block !important;
+                width: 100% !important;
+            }
+            
+            .mobile-center {
+                text-align: center !important;
+            }
+            
+            h1 {
+                font-size: 24px !important;
+            }
+            
+            .button-link {
+                font-size: 20px !important;
+            }
+        }
+    </style>
 </head>
 
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6;">
     <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #EDEDF4; padding: 20px 0; ">
         <tr>
             <td align="center">
-                <table cellpadding="0" cellspacing="0" border="0" width="650" style="background-color: white;">
+                <table cellpadding="0" cellspacing="0" border="0" width="650" class="main-table" style="background-color: white;">
                     <!-- Header -->
                     <tr>
-                        <td style="padding: 12px 30px;">
+                        <td class="content-cell" style="padding: 12px 30px;">
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                    <td valign="middle" style="vertical-align: middle; height: 40px;">
+                                    <td valign="middle" style="vertical-align: middle; height: 40px;" class="mobile-center">
                                         <img src="https://test.kodafor.com/logo.png" alt="Unisyn"
-                                            style="height: 30px; display: block;">
+                                            style="height: 30px; display: block; max-width: 100%;">
                                     </td>
-                                    <td align="right" valign="middle" style="vertical-align: middle; height: 40px;">
+                                    <td align="right" valign="middle" style="vertical-align: middle; height: 40px;" class="mobile-center">
                                         <a href="https://www.unisyn.app"
                                             style="color: #0066CC; text-decoration: none;">www.unisyn.app</a>
                                     </td>
@@ -32,15 +83,15 @@
 
                     <!-- Blue Banner -->
                     <tr>
-                        <td style="background-color: #0066CC; padding: 30px 30px;">
+                        <td class="banner-cell" style="background-color: #0066CC; padding: 30px 30px;">
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                    <td width="60%">
-                                        <h1 style="margin: 0; font-size: 30px; color: white;">You’ve Created Your Application!</h1>
+                                    <td width="60%" class="mobile-stack mobile-center">
+                                        <h1 style="margin: 0; font-size: 30px; color: white;">Documents Requested by Unisyn!</h1>
                                     </td>
-                                    <td width="40%" align="right">
+                                    <td width="40%" align="right" class="mobile-stack mobile-center">
                                         <img src="https://test.kodafor.com/rubikcube.png" alt="Security Icon"
-                                            style="width: 150px; height: 150px;">
+                                            style="width: 150px; height: 150px;" class="banner-image">
                                     </td>
                                 </tr>
                             </table>
@@ -49,13 +100,29 @@
 
                     <!-- Main Content -->
                     <tr>
-                        <td style="padding: 30px;">
-                            <h2 style="color: #333; margin-top: 0; font-size: 18px;">Let's Follow The Steps!</h2>
+                        <td class="content-cell" style="padding: 30px;">
+                            <h2 style="color: #333; margin-top: 0; font-size: 18px;">Hello!</h2>
                             <p style="color: black;">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
-                                sapien tristique eros porta sodales
+                                To begin your document upload, please click on the button below. This email will only be
+                                active for 48 hours. After that you will need an access code.
                             </p>
-
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" style="padding: 5px 0;">
+                                        <table cellpadding="0" cellspacing="0" border="0"
+                                            style="background-color: #F0F3FF; width: 100%; border-radius: 8px;">
+                                            <tr>
+                                                <td align="center" style="padding: 15px;">
+                                                    <a href="#" class="button-link"
+                                                        style="font-size: 24px; color:#0C6CE0; text-decoration: none; font-weight: 700;letter-spacing: 1px;">
+                                                        Upload Documents
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                             <p style="color: black;">If you have any questions, please reply to this email.</p>
                             <p style="margin-top: 20px; font-weight: bold;">
                                 Cheers,<br>
@@ -72,11 +139,11 @@
                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#EEF1FF"
                                     style="margin: 20px 0px 0px 0px; ">
                                     <tr style="text-align: left;">
-                                        <td style="padding: 30px; padding-left: 50px; padding-bottom: 25px;">
+                                        <td class="content-cell" style="padding: 30px; padding-left: 50px; padding-bottom: 25px;">
                                             <h3 style="margin-top: 0; color: #333;">Quick Links For You</h3>
-                                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0" class="quick-links-table">
                                                 <tr>
-                                                    <td width="50%" valign="top">
+                                                    <td width="50%" valign="top" class="mobile-stack">
                                                         <a href="#"
                                                             style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
                                                             <img src="https://test.kodafor.com/calendar-plus.png" alt=""
@@ -101,8 +168,9 @@
                                                                 style="display: inline-block; vertical-align: middle;">Go
                                                                 to Demo Scheduling</span>
                                                         </a>
+                                                    </td>
 
-                                                    <td width="50%" valign="top">
+                                                    <td width="50%" valign="top" class="mobile-stack">
                                                         <a href="#"
                                                             style="color: black; text-decoration: none; display: block; margin-bottom: 10px;">
                                                             <img src="https://test.kodafor.com/list.png" alt=""
@@ -127,7 +195,6 @@
                                                                 style="display: inline-block; vertical-align: middle;">Go
                                                                 to Onboarding AI</span>
                                                         </a>
-
                                                     </td>
                                                 </tr>
                                             </table>
@@ -140,7 +207,7 @@
 
                     <!-- Footer -->
                     <tr>
-                        <td style="padding: 0 30px ;border-bottom: 1px solid #D3D4DB; ">
+                        <td class="content-cell" style="padding: 0 30px; border-bottom: 1px solid #D3D4DB;">
                             <div style="padding-top: 20px;">
                                 <p style="color: black; font-size: 13px;">This email was intended for [ User Name ] at [
                                     User Email address ]. If you need assistance or have questions, please contact <a
@@ -160,10 +227,10 @@
 
                     <!-- Copyright and Social -->
                     <tr>
-                        <td style="padding: 20px 30px;">
+                        <td class="content-cell" style="padding: 20px 30px;">
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                    <td>
+                                    <td class="mobile-center">
                                         <p style="margin: 0;">2024 - Unisyn Technologies LLC. All Rights Reserved.</p>
                                     </td>
                                 </tr>
@@ -172,11 +239,11 @@
                                         <table width="100%" cellpadding="0" cellspacing="0" border="0"
                                             style="margin-top: 20px;">
                                             <tr>
-                                                <td>
+                                                <td class="mobile-center">
                                                     <img src="https://test.kodafor.com/filelock.png" alt="FileLocker"
                                                         style="height: 20px;">
                                                 </td>
-                                                <td align="right">
+                                                <td align="right" class="mobile-center">
                                                     <a href="#" style="margin-left: 10px;"><img
                                                             src="https://test.kodafor.com/linkedin.png" alt="LinkedIn"
                                                             style="height: 25px;"></a>
