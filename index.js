@@ -18,12 +18,11 @@ const transporter = nodemailer.createTransport({
 let mailOptions = {
     from: "jsftrx@gmail.com",
     to: "codefayt@gmail.com",
-    subject: "GİF TEST",
+    subject: "Welcome success gif",
     html: `
 <!DOCTYPE html>
 <html lang="en">
 <!-- DONE -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,6 +54,12 @@ let mailOptions = {
                 height: 100px !important;
             }
             
+            .features-table td {
+                display: block !important;
+                width: 100% !important;
+                padding: 10px 0 !important;
+            }
+            
             .mobile-stack {
                 display: block !important;
                 width: 100% !important;
@@ -62,16 +67,11 @@ let mailOptions = {
             
             .mobile-center {
                 text-align: center !important;
+                margin-top: 15px !important;
             }
             
             h1 {
                 font-size: 28px !important;
-            }
-            
-            .features-table td {
-                display: block !important;
-                width: 100% !important;
-                padding: 10px 0 !important;
             }
             
             .feature-icon {
@@ -93,7 +93,7 @@ let mailOptions = {
                 padding-bottom: 15px !important;
             }
             
-            .button-link {
+            .code-text {
                 font-size: 24px !important;
             }
         }
@@ -129,11 +129,11 @@ let mailOptions = {
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                     <td width="60%" class="mobile-stack mobile-center">
-                                        <h1 style="margin: 0; font-size: 35px; color: white; line-height: 1.2;">Create
-                                            An Account<br>With Us!</h1>
+                                        <h1 style="margin: 0; font-size: 35px; color: white; line-height: 1.2;">Welcome
+                                            To Unisyn!</h1>
                                     </td>
                                     <td width="40%" align="right" class="mobile-stack mobile-center">
-                                        <img src="https://test.kodafor.com/CreateAccount.gif" alt="Account Icon"
+                                        <img src="https://test.kodafor.com/WelcomeSuccess.gif" alt="Account Icon"
                                             style="width: 150px; height: 150px;" class="banner-image">
                                     </td>
                                 </tr>
@@ -146,8 +146,8 @@ let mailOptions = {
                         <td class="content-cell" style="padding: 30px;padding-bottom: 20px;">
                             <p
                                 style="color: black; margin-top: 0; margin-bottom: 10px; font-size: 18px;line-height: 24px;">
-                                You are invited to our platform! Please click on the button below to create an account
-                                and get started today.</p>
+                                Thank you for creating your account! To securely access your account please copy the
+                                code below and paste it into the prompted screen:</p>
 
                             <!-- Create Account Button -->
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -157,9 +157,10 @@ let mailOptions = {
                                             style="background-color: #F0F3FF; width: 100%; border-radius: 8px;">
                                             <tr>
                                                 <td align="center" style="padding: 15px;">
-                                                    <a href="#" class="button-link"
-                                                        style="font-size: 30px; color: #0066CC; text-decoration: none; font-weight: 800;">Create
-                                                        Account</a>
+                                                    <a href="#" class="code-text"
+                                                        style="font-size: 30px; color: #0066CC; text-decoration: none; font-weight: 900;letter-spacing: 2px;">
+                                                        975652
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </table>
@@ -200,8 +201,7 @@ let mailOptions = {
                                                         <tr>
                                                             <td width="40" valign="middle" class="mobile-center"
                                                                 style="padding-right: 10px; vertical-align: middle;">
-                                                                <img src="https://test.kodafor.com/frame_4.png"
-                                                                    alt="Core Platform" class="feature-icon"
+                                                                <img src="https://test.kodafor.com/frame_4.png" alt="Core Platform" class="feature-icon"
                                                                     style="width: 40px; height: 40px; padding: 8px; background-color: white;border-radius: 50%; display: block;">
                                                             </td>
                                                             <td valign="middle" style="vertical-align: middle;" class="feature-text">
@@ -217,8 +217,7 @@ let mailOptions = {
                                                         <tr>
                                                             <td width="40" valign="middle" class="mobile-center"
                                                                 style="padding-right: 10px; vertical-align: middle;">
-                                                                <img src="https://test.kodafor.com/frame_2x.png"
-                                                                    alt="SafeForms" class="feature-icon"
+                                                                <img src="https://test.kodafor.com/frame_2x.png" alt="SafeForms" class="feature-icon"
                                                                     style="width: 40px; height: 40px; padding: 8px; background-color: white;border-radius: 50%; display: block;">
                                                             </td>
                                                             <td valign="middle" style="vertical-align: middle;" class="feature-text">
@@ -236,8 +235,7 @@ let mailOptions = {
                                                         <tr>
                                                             <td width="40" valign="middle" class="mobile-center"
                                                                 style="padding-right: 10px; vertical-align: middle;">
-                                                                <img src="https://test.kodafor.com/framex.png"
-                                                                    alt="RiskVision AI" class="feature-icon"
+                                                                <img src="https://test.kodafor.com/framex.png" alt="RiskVision AI" class="feature-icon"
                                                                     style="width: 40px; height: 40px; padding: 8px; background-color: white; border-radius: 50%; display: block;">
                                                             </td>
                                                             <td valign="middle" style="vertical-align: middle;" class="feature-text">
@@ -253,8 +251,7 @@ let mailOptions = {
                                                         <tr>
                                                             <td width="40" valign="middle" class="mobile-center"
                                                                 style="padding-right: 10px; vertical-align: middle;">
-                                                                <img src="https://test.kodafor.com/frame_4.png"
-                                                                    alt="DocEasy" class="feature-icon"
+                                                                <img src="https://test.kodafor.com/frame_4.png" alt="DocEasy" class="feature-icon"
                                                                     style="width: 40px; height: 40px; padding: 8px; background-color: white; border-radius: 50%; display: block;">
                                                             </td>
                                                             <td valign="middle" style="vertical-align: middle;" class="feature-text">
