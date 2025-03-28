@@ -2,7 +2,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const app = express();
 
-/* xnxs rxqc pdgd xewt */
+
 
 app.use(express.json());
 app.use(express.static("public"));
@@ -11,13 +11,13 @@ const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
         user: "jsftrx@gmail.com",
-        pass: "xnxs rxqc pdgd xewt",
+        pass: "",
     },
 });
 
 let mailOptions = {
     from: "jsftrx@gmail.com",
-    to: "codefayt@gmail.com",
+    to: "",
     subject: "Welcome success gif",
     html: `
 <!DOCTYPE html>
@@ -30,48 +30,53 @@ let mailOptions = {
     <title>Unisyn Email Template</title>
     <style type="text/css">
         /* Reset styles */
-        body, html {
+        body,
+        html {
             margin: 0;
             padding: 0;
             width: 100% !important;
         }
-        
+
         /* Responsive styles */
         @media only screen and (max-width: 650px) {
             .main-table {
                 width: 100% !important;
             }
-            
+
             .content-cell {
                 padding: 20px 15px !important;
             }
-            
+
             .banner-cell {
                 padding: 20px 15px !important;
             }
-            
+
             .banner-image {
                 width: 100px !important;
                 height: 100px !important;
             }
-            
+
             .quick-links-table td {
                 display: block !important;
                 width: 100% !important;
             }
-            
+
             .mobile-stack {
                 display: block !important;
                 width: 100% !important;
             }
-            
+
             .mobile-center {
-                margin-top: 15px !important;
                 text-align: center !important;
+                margin-top: 15px !important;
             }
-            
+
             h1 {
                 font-size: 24px !important;
+            }
+
+            h2 {
+                font-size: 16px !important;
             }
         }
     </style>
@@ -81,17 +86,20 @@ let mailOptions = {
     <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #EDEDF4; padding: 20px 0; ">
         <tr>
             <td align="center">
-                <table cellpadding="0" cellspacing="0" border="0" width="650" class="main-table" style="background-color: white;">
+                <table cellpadding="0" cellspacing="0" border="0" width="650" class="main-table"
+                    style="background-color: white;">
                     <!-- Header -->
                     <tr>
                         <td class="content-cell" style="padding: 12px 30px;">
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                    <td valign="middle" style="vertical-align: middle; height: 40px;" class="mobile-center">
+                                    <td valign="middle" style="vertical-align: middle; height: 40px;"
+                                        class="mobile-center">
                                         <img src="https://test.kodafor.com/logo.png" alt="Unisyn"
                                             style="height: 30px; display: block; max-width: 100%;">
                                     </td>
-                                    <td align="right" valign="middle" style="vertical-align: middle; height: 40px;" class="mobile-center">
+                                    <td align="right" valign="middle" style="vertical-align: middle; height: 40px;"
+                                        class="mobile-center">
                                         <a href="https://www.unisyn.app"
                                             style="color: #0066CC; text-decoration: none;">www.unisyn.app</a>
                                     </td>
@@ -106,10 +114,12 @@ let mailOptions = {
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                     <td width="60%" class="mobile-stack mobile-center">
-                                        <h1 style="margin: 0; font-size: 30px; color: white;">Action Required</h1>
+                                        <h1 style="margin: 0; font-size: 30px; color: white;">
+                                            Two-Step Authentication Enabled!
+                                        </h1>
                                     </td>
                                     <td width="40%" align="right" class="mobile-stack mobile-center">
-                                        <img src="https://test.kodafor.com/SecureUnlock.gif" alt="Security Icon"
+                                        <img src="https://test.kodafor.com/rubic_cube.gif" alt="Security Icon"
                                             style="width: 150px; height: 150px;" class="banner-image">
                                     </td>
                                 </tr>
@@ -120,12 +130,12 @@ let mailOptions = {
                     <!-- Main Content -->
                     <tr>
                         <td class="content-cell" style="padding: 30px;">
-                            <h2 style="color: #333; margin-top: 0; font-size: 18px;">Hello!</h2>
-                            <p style="color: black;">
-                                To begin your document upload, please click on the button below. This email will only be
-                                active for 48 hours. After that you will need an access code.
+                            <!-- <h2 style="color: #333; margin-top: 0; font-size: 18px;">Let's Follow The Steps!</h2> -->
+                            <p style="color: black; font-size: 17px;">
+                                When logging into Unisyn, you will need to enter a code generated by your aunthenticator
+                                app in addition to entering your usual email address and password.
                             </p>
-                            
+
                             <p style="color: black;">If you have any questions, please reply to this email.</p>
                             <p style="margin-top: 20px; font-weight: bold;">
                                 Cheers,<br>
@@ -133,7 +143,29 @@ let mailOptions = {
                             </p>
                         </td>
                     </tr>
-
+                    <tr>
+                        <td class="content-cell" style="border-top: 1px solid #D3D4DB;padding-top: 20px; padding: 20px 30px;">
+                            <div >
+                                <table width="100%" cellpadding="0" cellspacing="5" border="0">
+                                    <tr>
+                                        <td style="color: #333; font-size: 16px; padding-bottom: 5px;">
+                                            <strong>Platform:</strong> Chrome browser on MacOS device
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: #333; font-size: 16px; padding-bottom: 5px;">
+                                            <strong>Device Location:</strong> Toronto, Ontario, Canada (184.145.102.190)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: #333; font-size: 16px; padding-bottom: 5px;">
+                                            <strong>Time:</strong> March 27, 2025 at 5:20:45 AM EDT
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
 
                     <!-- Quick Links Section -->
                     <tr>
@@ -142,9 +174,11 @@ let mailOptions = {
                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#EEF1FF"
                                     style="margin: 20px 0px 0px 0px; ">
                                     <tr style="text-align: left;">
-                                        <td class="content-cell" style="padding: 30px; padding-left: 50px; padding-bottom: 25px;">
+                                        <td class="content-cell"
+                                            style="padding: 30px; padding-left: 50px; padding-bottom: 25px;">
                                             <h3 style="margin-top: 0; color: #333;">Quick Links For You</h3>
-                                            <table width="100%" cellpadding="0" cellspacing="0" border="0" class="quick-links-table">
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                                                class="quick-links-table">
                                                 <tr>
                                                     <td width="50%" valign="top" class="mobile-stack">
                                                         <a href="#"
