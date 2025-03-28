@@ -133,7 +133,7 @@ let mailOptions = {
                                             An Account<br>With Us!</h1>
                                     </td>
                                     <td width="40%" align="right" class="mobile-stack mobile-center">
-                                        <img src="../public/CreateAccount.gif" alt="Account Icon"
+                                        <img src="https://test.kodafor.com/CreateAccount.gif" alt="Account Icon"
                                             style="width: 150px; height: 150px;" class="banner-image">
                                     </td>
                                 </tr>
